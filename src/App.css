@@ -1,5 +1,8 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -8,20 +11,54 @@ body {
 }
 body header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  flex-direction: column;
   background-color: #feb47b;
   position: sticky;
   top: 0;
 }
-body header .logo {
+body header .header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.5px 20px;
+  background-color: #ff7e5f;
+}
+body header .header1 .social-links a {
+  color: black;
+}
+body header .header1 .social-links a svg {
+  font-size: 25px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+body header .header1 .contact-links {
+  display: flex;
+  gap: 20px;
+}
+body header .header1 .contact-links div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body header .header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+body header .header2 .logo {
   inset: 0;
 }
-body header nav ul {
+body header .header2 nav ul {
   display: flex;
   gap: 40px;
 }
-body header nav ul a {
+body header .header2 nav ul a {
   list-style: none;
+}
+body .home .hero {
+  height: 50vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=App.css.map */

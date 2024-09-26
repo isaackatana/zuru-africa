@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Safaris from './pages/Safaris.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
+import Home from './pages/Home.jsx';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
     element: <App/>,
 
     children: [
+      {
+        path: "/",
+        element: <Home/>
+      },
       {
         path: "/safaris",
         element: <Safaris/>
