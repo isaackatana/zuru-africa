@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #ff7e5f, #feb47b);
+    height: 100vh;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #feb47b;
+        position: sticky;
+        top: 0;
+
+        .logo {
+            inset: 0;
+        }
+        nav {
+            ul {
+                display: flex;
+                gap: 40px;
+
+                a {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

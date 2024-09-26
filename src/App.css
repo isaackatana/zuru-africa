@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #ff7e5f, #feb47b);
+  height: 100vh;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #feb47b;
+  position: sticky;
+  top: 0;
+}
+body header .logo {
+  inset: 0;
+}
+body header nav ul {
+  display: flex;
+  gap: 40px;
+}
+body header nav ul a {
+  list-style: none;
+}/*# sourceMappingURL=App.css.map */
