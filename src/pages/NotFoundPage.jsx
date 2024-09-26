@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
 
 function NotFoundPage() {
   return (
@@ -7,9 +8,11 @@ function NotFoundPage() {
     <Helmet>
       <title>Page Not Found</title>
     </Helmet>
-    <div>
-      <h1>404</h1>
-      <h1>Page Not Found</h1>
+    <div className='not-found-page'>
+      <div>
+        <h1>404 Page Not Found</h1>
+        <h3>Back to <Link to='/'>Home</Link></h3>
+      </div>
     </div>
     </>
   )
