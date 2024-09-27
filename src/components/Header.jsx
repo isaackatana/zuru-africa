@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
+import { FaBars, FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
+import { FaBurger, FaXTwitter } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 function Header() {
@@ -18,17 +18,20 @@ function Header() {
         </div>
 
       </div>
-        <div className="header2">
-          <div className="logo">Logo</div>
-          <nav>
-              <ul>
-                  <Link to="/">Home</Link>
-                  <Link to="/safaris">Safaris</Link>
-                  <Link to="/contact">Contact</Link>
-                  <Link to="/about">About</Link>
-              </ul>
-          </nav>
+      <div className="header2">
+        <div className="logo">Juels Safaris</div>
+        <nav>
+            <ul>
+                <Link to="/">Home</Link>
+                <Link to="/safaris">Safaris</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/about">About</Link>
+            </ul>
+        </nav>
+        <div className="burger">
+          <FaBars/>
         </div>
+      </div>
     </header>
   )
 }

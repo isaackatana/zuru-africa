@@ -5,7 +5,7 @@ function Safaris() {
   return (
     <>
     <Helmet>
-      <title>Tours & Safaris</title>
+      <title>Safaris</title>
     </Helmet>
     </>
   )

@@ -1,3 +1,21 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == mobile {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+        }
+        @else if $breakpoint == tablet {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+        }
+        @else if $breakpoint == desktop {
+        @media screen and (min-width: 1024px) {
+            @content;
+        }
+    }
+}
+  
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +55,17 @@ body {
                 display: flex;
                 gap: 20px;
 
+                @include respond-to(mobile) {
+                    flex-direction: column;
+                    gap: 5px;
+                }
+                
+                @include respond-to(tablet) {
+                }
+                
+                @include respond-to(desktop) {
+                }
+
                 div {
                     display: flex;
                     align-items: center;
@@ -49,22 +78,52 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
             
             .logo {
-                inset: 0;
+                padding: 20px;
             }
+
             nav {
                 ul {
                     display: flex;
-                    gap: 40px;
     
                     a {
                         list-style: none;
                         color: black;
                         text-decoration: none;
                         font-size: large;
+                        padding: 20px;
+
+                        @include respond-to(mobile) {
+                            display: none;
+                        }
+                        
+                        @include respond-to(tablet) {
+                        }
+                        
+                        @include respond-to(desktop) {
+                        }
                     }
+                }
+            }
+
+            .burger {
+                padding: 20px;
+                display: none;
+
+                @include respond-to(mobile) {
+                    display: flex;
+                    cursor: pointer;
+                }
+                
+                @include respond-to(tablet) {
+                }
+                
+                @include respond-to(desktop) {
+                }
+
+                svg {
+                    font-size: 25px;
                 }
             }
         }
@@ -73,6 +132,7 @@ body {
     .home {
         .hero {
             height: 50vh;
+            background-image: url('https://idsb.tmgrup.com.tr/ly/uploads/images/2023/09/29/294329.jpg');
             background-color: black;
             background-repeat: no-repeat;
             background-size: cover;
@@ -91,6 +151,27 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+    }
+
+    footer {
+        background-color: #ff7e5f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7.5px 20px;
+        gap: 7.5px;
+
+        .social-links {
+            a {
+                color: black;
+                
+                svg {
+                    font-size: 25px;
+                    margin:0 2px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
