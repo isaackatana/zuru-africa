@@ -10,9 +10,10 @@ function NotFoundPage() {
     </Helmet>
     <div className='not-found-page'>
       <div>
-        <h1>404 Page Not Found</h1>
-        <h3>Back to <Link to='/'>Home</Link></h3>
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
       </div>
+      <h3>Back to <Link to='/'>Home</Link></h3>
     </div>
     </>
   )
