@@ -32,6 +32,7 @@ body {
         background-color: #feb47b;
         position: sticky;
         top: 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
         .header1 {
             display: flex;
@@ -57,7 +58,7 @@ body {
 
                 @include respond-to(mobile) {
                     flex-direction: column;
-                    gap: 5px;
+                    gap: 3px;
                 }
                 
                 @include respond-to(tablet) {
@@ -78,9 +79,10 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+            padding: 0 20px;
+
             .logo {
-                padding: 20px;
+                cursor: pointer;
             }
 
             nav {
@@ -92,7 +94,11 @@ body {
                         color: black;
                         text-decoration: none;
                         font-size: large;
-                        padding: 20px;
+                        padding: 7.5px 20px;
+
+                        &:hover{
+                            background-color: #ff7e5f;
+                        }
 
                         @include respond-to(mobile) {
                             display: none;
@@ -103,6 +109,10 @@ body {
                         
                         @include respond-to(desktop) {
                         }
+                    }
+
+                    .active {
+                        background-color: #ff7e5f;
                     }
                 }
             }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBars, FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
-import { FaBurger, FaXTwitter } from 'react-icons/fa6'
-import { Link } from 'react-router-dom'
+import { FaXTwitter } from 'react-icons/fa6'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -22,10 +22,10 @@ function Header() {
         <div className="logo">Juels Safaris</div>
         <nav>
             <ul>
-                <Link to="/">Home</Link>
-                <Link to="/safaris">Safaris</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/about">About</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/safaris">Safaris</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/about">About</NavLink>
             </ul>
         </nav>
         <div className="burger">

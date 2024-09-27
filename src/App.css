@@ -14,6 +14,7 @@ body header {
   background-color: #feb47b;
   position: sticky;
   top: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 body header .header1 {
   display: flex;
@@ -37,7 +38,7 @@ body header .header1 .contact-links {
 @media screen and (max-width: 480px) {
   body header .header1 .contact-links {
     flex-direction: column;
-    gap: 5px;
+    gap: 3px;
   }
 }
 body header .header1 .contact-links div {
@@ -49,9 +50,10 @@ body header .header2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 body header .header2 .logo {
-  padding: 20px;
+  cursor: pointer;
 }
 body header .header2 nav ul {
   display: flex;
@@ -61,12 +63,18 @@ body header .header2 nav ul a {
   color: black;
   text-decoration: none;
   font-size: large;
-  padding: 20px;
+  padding: 7.5px 20px;
+}
+body header .header2 nav ul a:hover {
+  background-color: #ff7e5f;
 }
 @media screen and (max-width: 480px) {
   body header .header2 nav ul a {
     display: none;
   }
+}
+body header .header2 nav ul .active {
+  background-color: #ff7e5f;
 }
 body header .header2 .burger {
   padding: 20px;
