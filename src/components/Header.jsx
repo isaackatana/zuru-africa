@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBars, FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -16,17 +16,38 @@ function Header() {
           <div><FaPhone/>+254  700 000000</div>
           <div><FaEnvelope/> info@juelssafaris.com</div>
         </div>
-
       </div>
-      <div className="header2">
-        <div className="logo">Juels Safaris</div>
+      <div className="header2">                                    
+        <Link to='/'><div className="logo">Juels Tours & Safaris</div></Link>
         <nav>
             <ul>
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="/safaris">Safaris</NavLink>
+                <div className="has-submenu">
+                  <NavLink to="/tours">Tours</NavLink>
+
+                  <ul>
+                    <Link to=''>Shimba Hills</Link>
+                    <Link to=''>Tsavo</Link>
+                    <Link to=''>Lamu</Link>
+                  </ul>
+                </div>
+                <div className="has-submenu">
+                  <NavLink to="/safaris">Safaris</NavLink>
+
+                  <ul>
+                    <Link to=''>Zanzibar</Link>
+                    <Link to=''>Malindi</Link>
+                    <Link to=''>Kilifi</Link>
+                    <Link to=''>Diani</Link>
+                  </ul>
+                </div>
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/about">About</NavLink>
             </ul>
+            <div className="user-login">
+              <button className='login-btn'>Login</button>
+              <button className='register-btn'>Register</button>
+            </div>
         </nav>
         <div className="burger">
           <FaBars/>

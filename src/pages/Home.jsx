@@ -7,6 +7,7 @@ const photos = [
   'https://idsb.tmgrup.com.tr/ly/uploads/images/2023/09/29/294328.jpg',
 ];
 
+
 function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,17 +23,15 @@ function Home() {
   return (
     <>
     <Helmet>
-      <title>Juels Safaris | Home</title>
+      <title>Juels Tours & Safaris</title>
     </Helmet>
     <div className="home">
         <div className="hero">
-
           {photos.map((photo, index) => (
             <div key={index} className={`carousel-slide ${index === currentIndex ? 'active' : ''}`} >
               <img src={photo} alt={`Slide ${index + 1}`} />
             </div>
           ))}
-        
         </div>
     </div>
     </>
