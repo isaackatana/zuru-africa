@@ -152,6 +152,69 @@ header .header2 .burger svg {
   font-size: 25px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.overlay .popup {
+  background-color: #feb47b;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+.overlay .popup .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: solid black 1px;
+  font-size: small;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.overlay form input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.overlay form button {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.overlay form button:hover {
+  background-color: #0056b3;
+}
+.overlay p {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #007bff;
+}
+.overlay p:hover {
+  text-decoration: underline;
+}
+
 .home .hero {
   position: relative;
   width: 100%;
