@@ -23,7 +23,7 @@ function Home() {
   return (
     <>
     <Helmet>
-      <title>Juels Tours & Safaris</title>
+      <title>Zuru Africa Tours & Safaris</title>
     </Helmet>
     <div className="home">
         <div className="hero">

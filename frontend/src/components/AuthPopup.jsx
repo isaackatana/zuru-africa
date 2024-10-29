@@ -20,12 +20,17 @@ const AuthPopup = ({ onClose }) => {
     });
     const data = await response.json();
     if (response.ok) {
+      if (isLogin) {
+        // Store the token in localStorage
+        localStorage.setItem('token', data.token);
+      }
       alert(isLogin ? 'Login successful' : 'Registration successful');
       onClose();
     } else {
       alert(data.message || 'An error occurred');
     }
   };
+
 
   return (
     <div className="overlay" onClick={onClose}>

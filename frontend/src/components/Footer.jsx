@@ -29,12 +29,12 @@ function Footer() {
         <div className='contact'>
           <h4>Contact</h4>
           <div><FaLocationPin/><span>Address:</span> Ukunda, Diani</div>
-          <div><FaEnvelope/><span>Email:</span> info@juelssafari.com</div>
+          <div><FaEnvelope/><span>Email:</span> info@zuruafricasafaris.com</div>
           <div><FaPhone/><span>Phone:</span> +254 700 000 000</div>
         </div>
       </div>
       <div className='footer2'>
-        <p>Copyright © 2024 Juels Safaris. All Rights Reserved. </p>
+        <p>Copyright © 2024 Zuru Africa Safaris. All Rights Reserved. </p>
         <div className="social-links">
           <a href="http://facebook.com/juelssafaris" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
           <a href="http://instagram.com/juelssafaris" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>

@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/authdb', {
+mongoose.connect('mongodb+srv://mrisaackatana:Iyez8cyhuBFFXCaf@zuruafricasafaris.w0zr6.mongodb.net/?retryWrites=true&w=majority&appName=ZuruAfricaSafaris', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => console.log('Connected to MongoDB'));

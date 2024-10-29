@@ -17,11 +17,11 @@ function Header() {
         </div>
         <div className="contact-links">
           <div><FaPhone/>+254  700 000000</div>
-          <div><FaEnvelope/> info@juelssafaris.com</div>
+          <div><FaEnvelope/> info@zuruafricasafaris.com</div>
         </div>
       </div>
       <div className="header2">                                    
-        <Link to='/'><div className="logo">Juels Tours & Safaris</div></Link>
+        <Link to='/'><div className="logo">Zuru Africa Tours & Safaris</div></Link>
         <nav>
             <ul>
                 <NavLink to="/">Home</NavLink>
