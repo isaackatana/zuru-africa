@@ -181,8 +181,15 @@ header {
                         background-color: black;
                     }
                 }
+
                 .login-btn {
                     background-color: transparent;
+                }
+            }
+
+            .user-profile {
+                svg {
+                    font-size: 25px;
                 }
             }
         }

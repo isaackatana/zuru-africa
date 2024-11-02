@@ -138,6 +138,9 @@ header .header2 nav .user-login button:hover {
 header .header2 nav .user-login .login-btn {
   background-color: transparent;
 }
+header .header2 nav .user-profile svg {
+  font-size: 25px;
+}
 header .header2 .burger {
   padding: 20px;
   display: none;

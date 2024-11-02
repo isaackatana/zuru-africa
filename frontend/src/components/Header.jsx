@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
+import { FaBars, FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaUser } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { Link, NavLink } from 'react-router-dom'
 import AuthPopup from './AuthPopup';
@@ -49,7 +49,11 @@ function Header() {
             </ul>
             <div className="user-login">
               <button onClick={() => setAuthPopupOpen(true)}>Login / Register</button>
+              <button>Logout</button>
               {isAuthPopupOpen && <AuthPopup onClose={() => setAuthPopupOpen(false)} />} 
+            </div>
+            <div className="user-profile">
+              <FaUser/>
             </div>
         </nav>
         <div className="burger">
