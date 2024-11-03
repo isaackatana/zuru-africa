@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const AuthPopup = ({ onClose }) => {
+const AuthPopup = ({ onClose, onLoginSuccess }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({ username: '', email: '', password: '' });
 
@@ -21,8 +21,7 @@ const AuthPopup = ({ onClose }) => {
     const data = await response.json();
     if (response.ok) {
       if (isLogin) {
-        // Store the token in localStorage
-        localStorage.setItem('token', data.token);
+        onLoginSuccess(data.token); // Pass token to parent component
       }
       alert(isLogin ? 'Login successful' : 'Registration successful');
       onClose();
@@ -30,7 +29,6 @@ const AuthPopup = ({ onClose }) => {
       alert(data.message || 'An error occurred');
     }
   };
-
 
   return (
     <div className="overlay" onClick={onClose}>

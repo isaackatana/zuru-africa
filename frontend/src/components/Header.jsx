@@ -6,6 +6,20 @@ import AuthPopup from './AuthPopup';
 
 function Header() {
   const [isAuthPopupOpen, setAuthPopupOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // Handle successful login
+  const handleLoginSuccess = (token) => {
+    localStorage.setItem('token', token);
+    setIsLoggedIn(true);
+    setAuthPopupOpen(false); // Close the modal
+  };
+
+  // Handle logout
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    setIsLoggedIn(false);
+  };
 
   return (
     <header>
@@ -48,12 +62,15 @@ function Header() {
                 <NavLink to="/about">About</NavLink>
             </ul>
             <div className="user-login">
-              <button onClick={() => setAuthPopupOpen(true)}>Login / Register</button>
-              <button>Logout</button>
-              {isAuthPopupOpen && <AuthPopup onClose={() => setAuthPopupOpen(false)} />} 
-            </div>
-            <div className="user-profile">
-              <FaUser/>
+              {isLoggedIn ? (
+                <div className="profile">
+                  <button onClick={handleLogout}>Logout</button>
+                  <span className="profile-icon"><FaUser/></span>
+                </div>
+              ) : (
+                <button onClick={() => setAuthPopupOpen(true)}>Login / Register</button>
+              )}
+              {isAuthPopupOpen && <AuthPopup onClose={() => setAuthPopupOpen(false)} onLoginSuccess={handleLoginSuccess} />}
             </div>
         </nav>
         <div className="burger">

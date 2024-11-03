@@ -135,11 +135,25 @@ header .header2 nav .user-login button:hover {
   color: white;
   background-color: black;
 }
+header .header2 nav .user-login .profile {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+header .header2 nav .user-login .profile .profile-icon {
+  display: flex;
+  align-items: cen;
+  justify-content: center;
+  background-color: #ff7e5f;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+}
+header .header2 nav .user-login .profile .profile-icon svg {
+  font-size: 20px;
+}
 header .header2 nav .user-login .login-btn {
   background-color: transparent;
-}
-header .header2 nav .user-profile svg {
-  font-size: 25px;
 }
 header .header2 .burger {
   padding: 20px;

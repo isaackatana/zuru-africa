@@ -182,14 +182,28 @@ header {
                     }
                 }
 
+                .profile {
+                    display: flex;
+                    gap: 5px;
+                    cursor:  pointer;
+
+                    .profile-icon {
+                        display: flex;
+                        align-items: cen;
+                        justify-content: center;
+                        background-color: #ff7e5f;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 25px;
+
+                        svg {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
                 .login-btn {
                     background-color: transparent;
-                }
-            }
-
-            .user-profile {
-                svg {
-                    font-size: 25px;
                 }
             }
         }
@@ -216,7 +230,7 @@ header {
     }
 }
 
-// AuthPopup.scss
+// AuthPopup
 
 .overlay {
     position: fixed;
