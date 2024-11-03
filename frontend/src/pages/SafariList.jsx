@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
 const safariPhotos = [
@@ -7,7 +7,7 @@ const safariPhotos = [
   'https://idsb.tmgrup.com.tr/ly/uploads/images/2023/09/29/294328.jpg',
 ];
 
-function SafariList({safaris}) {
+function SafariList({ safaris }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -20,24 +20,24 @@ function SafariList({safaris}) {
 
   return (
     <>
-        {safaris.map((safari, index) => (
-            <div key={index} className={`wrapper ${index === currentIndex ? 'active' : ''}`}  >
-              <img src={safariPhotos} alt={`Slide ${index + 1}`}/>
-              <div className="info">
-                <div className="wrapper2">
-                  <h2>3 days trip</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit magni officiis nemo possimus blanditiis.</p>
-                </div>
-                <div className='add-to-cart'>
-                  <h3>From $300</h3>
-                  <FaArrowRight/>
-                </div>
-              </div>
-              <h1>{safari.name}</h1>
+      {safaris.map((safari, index) => (
+        <div key={index} className={`wrapper ${index === currentIndex ? 'active' : ''}`}>
+          <img src={safariPhotos[currentIndex]} alt={`Slide ${index + 1}`} />
+          <div className="info">
+            <div className="wrapper2">
+              <h2>3 days trip</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit magni officiis nemo possimus blanditiis.</p>
             </div>
-        ))}
+            <div className="add-to-cart">
+              <h3>From $300</h3>
+              <FaArrowRight />
+            </div>
+          </div>
+          <h1>{safari.name}</h1>
+        </div>
+      ))}
     </>
-  )
+  );
 }
 
-export default SafariList
+export default SafariList;
