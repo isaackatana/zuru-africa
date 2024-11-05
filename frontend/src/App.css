@@ -126,8 +126,8 @@ header .header2 nav .user-login button {
   width: 100px;
   padding: 5px;
   background-color: #ff7e5f;
-  border: solid 1px;
-  border-radius: 6px;
+  border-radius: 25px;
+  border: none;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -148,13 +148,10 @@ header .header2 nav .user-login .profile .profile-icon {
   width: 30px;
   height: 30px;
   border-radius: 25px;
-  border: solid black 1px;
+  border: none;
 }
 header .header2 nav .user-login .profile .profile-icon svg {
-  font-size: 20px;
-}
-header .header2 nav .user-login .login-btn {
-  background-color: transparent;
+  font-size: 15px;
 }
 header .header2 .burger {
   padding: 20px;
@@ -296,7 +293,6 @@ header .header2 .burger svg {
      object-fit: cover;
 }
 .safaris .container .wrapper .info {
-  color: white;
   background-color: black;
   bottom: 0;
   width: 100%;
@@ -308,9 +304,13 @@ header .header2 .burger svg {
 .safaris .container .wrapper .info .add-to-cart {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
 }
-.safaris .container .wrapper .info .add-to-cart h3 {
-  margin-top: 10px;
+.safaris .container .wrapper .info .add-to-cart:hover {
+  background-color: #ff7e5f;
+  color: white;
 }
 .safaris .container .wrapper .info .add-to-cart svg {
   font-size: 30px;
@@ -411,14 +411,14 @@ header .header2 .burger svg {
 }
 .newsletter div div input {
   padding: 10px;
-  border: solid 1px;
+  border: none;
   border-radius: 5px 0 0 5px;
 }
 .newsletter div div button {
   width: 100px;
   cursor: pointer;
   background-color: #ff7e5f;
-  border: solid 1px;
+  border: none;
   border-radius: 0 5px 5px 0;
   transition: 0.2s;
 }

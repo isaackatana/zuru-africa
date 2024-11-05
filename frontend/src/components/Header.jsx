@@ -35,7 +35,7 @@ function Header() {
         </div>
       </div>
       <div className="header2">                                    
-        <Link to='/'><div className="logo">Zuru Africa Tours & Safaris</div></Link>
+        <Link to='/'><div className="logo">ZATS</div></Link>
         <nav>
             <ul>
                 <NavLink to="/">Home</NavLink>
@@ -72,10 +72,10 @@ function Header() {
               )}
               {isAuthPopupOpen && <AuthPopup onClose={() => setAuthPopupOpen(false)} onLoginSuccess={handleLoginSuccess} />}
             </div>
+            <div className="burger">
+              <FaBars/>
+            </div>
         </nav>
-        <div className="burger">
-          <FaBars/>
-        </div>
       </div>
     </header>
   )

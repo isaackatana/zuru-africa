@@ -21,11 +21,10 @@ function Safaris() {
   return (
     <>
     <Helmet>
-      <title>Juels | Safaris</title>
+      <title>Zuru Africa | Safaris</title>
     </Helmet>
 
     <div className="safaris">
-      <h1>Safaris</h1>
       <div className="container">
         <SafariList safaris={safaris}/>
       </div>

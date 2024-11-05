@@ -171,8 +171,8 @@ header {
                     width: 100px;
                     padding: 5px;
                     background-color: #ff7e5f;
-                    border: solid 1px;
-                    border-radius: 6px;
+                    border-radius: 25px;
+                    border: none;
                     cursor: pointer;
                     transition: 0.2s;
 
@@ -195,16 +195,12 @@ header {
                         width: 30px;
                         height: 30px;
                         border-radius: 25px;
-                        border: solid black 1px ;
+                        border: none;
 
                         svg {
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                     }
-                }
-
-                .login-btn {
-                    background-color: transparent;
                 }
             }
         }
@@ -275,16 +271,16 @@ header {
         gap: 1rem;
     
         input {
-        padding: 0.5rem;
-        border-radius: 4px;
-        border: 1px solid #ddd;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
         }
     
         button {
-        padding: 0.5rem;
-        background-color: #007bff;
-        color: white;
-        border-radius: 4px;
+            padding: 0.5rem;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
         cursor: pointer;
     
         &:hover {
@@ -374,7 +370,6 @@ header {
             }
 
             .info {
-                color: white;
                 background-color: black;
                 bottom: 0;
                 width: 100%;
@@ -387,9 +382,13 @@ header {
                 .add-to-cart {
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    cursor: pointer;
 
-                    h3 {
-                        margin-top: 10px;
+                    &:hover {
+                        background-color: #ff7e5f;
+                        color: white;
                     }
     
                     svg {
@@ -534,7 +533,7 @@ header {
 
             input {
                 padding: 10px;
-                border: solid 1px;
+                border: none;
                 border-radius: 5px 0 0 5px;
             }
 
@@ -542,7 +541,7 @@ header {
                 width: 100px;
                 cursor: pointer;
                 background-color: #ff7e5f;
-                border: solid 1px;
+                border: none;
                 border-radius: 0  5px 5px 0;
                 transition: 0.2s;
 
