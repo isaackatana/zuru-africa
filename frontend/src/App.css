@@ -136,7 +136,7 @@ header .header2 nav .user-login button {
   width: 100px;
   padding: 5px;
   background-color: #ff7e5f;
-  border-radius: 10px;
+  border-radius: 25px;
   border: none;
   cursor: pointer;
   transition: 0.2s;
@@ -147,6 +147,7 @@ header .header2 nav .user-login button:hover {
 }
 header .header2 nav .user-login .profile {
   display: flex;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
 }
@@ -191,11 +192,15 @@ header .header2 .burger svg {
 }
 .overlay .popup {
   background-color: #feb47b;
-  padding: 2rem;
+  padding: 20px;
   width: 300px;
   border-radius: 8px;
   position: relative;
   text-align: center;
+}
+.overlay .popup h2 {
+  text-align: start;
+  margin-bottom: 10px;
 }
 .overlay .popup .close-button {
   position: absolute;
@@ -214,10 +219,10 @@ header .header2 .burger svg {
 .overlay form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
 }
 .overlay form input {
-  padding: 0.5rem;
+  padding: 10px;
   border-radius: 4px;
   border: 1px solid #ddd;
 }
@@ -234,7 +239,6 @@ header .header2 .burger svg {
 .overlay p {
   margin-top: 1rem;
   cursor: pointer;
-  color: #007bff;
 }
 .overlay p:hover {
   text-decoration: underline;
@@ -329,7 +333,7 @@ header .header2 .burger svg {
   cursor: pointer;
 }
 .safaris .container .wrapper .info .add-to-cart svg:hover {
-  color: #ff7e5f;
+  color: black;
 }
 .safaris .container .active {
   opacity: 1;

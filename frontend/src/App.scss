@@ -179,7 +179,7 @@ header {
                     width: 100px;
                     padding: 5px;
                     background-color: #ff7e5f;
-                    border-radius: 10px;
+                    border-radius: 25px;
                     border: none;
                     cursor: pointer;
                     transition: 0.2s;
@@ -192,6 +192,7 @@ header {
 
                 .profile {
                     display: flex;
+                    align-items: center;
                     gap: 5px;
                     cursor:  pointer;
 
@@ -221,12 +222,6 @@ header {
                 display: flex;
                 cursor: pointer;
             }
-            
-            @include respond-to(tablet) {
-            }
-            
-            @include respond-to(desktop) {
-            }
 
             svg {
                 font-size: 25px;
@@ -251,11 +246,16 @@ header {
 
     .popup {
         background-color: #feb47b;
-        padding: 2rem;
+        padding: 20px;
         width: 300px;
         border-radius: 8px;
         position: relative;
         text-align: center;
+
+        h2 {
+            text-align: start;
+            margin-bottom: 10px;
+        }
 
         .close-button {
             position: absolute;
@@ -276,10 +276,10 @@ header {
     form {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 10px;
     
         input {
-            padding: 0.5rem;
+            padding: 10px;
             border-radius: 4px;
             border: 1px solid #ddd;
         }
@@ -300,7 +300,6 @@ header {
     p {
         margin-top: 1rem;
         cursor: pointer;
-        color: #007bff;
     
         &:hover {
         text-decoration: underline;
@@ -406,7 +405,7 @@ header {
                         cursor: pointer;
     
                         &:hover {
-                            color: #ff7e5f;
+                            color: black;
                         }
                     }
                 }
