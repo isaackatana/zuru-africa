@@ -22,10 +22,10 @@ function SafariList({ safaris }) {
     <>
       {safaris.map((safari, index) => (
         <div key={index} className={`wrapper ${index === currentIndex ? 'active' : ''}`}>
+          <h1>{safari.name}</h1>
           <img src={safariPhotos[currentIndex]} alt={`Slide ${index + 1}`} />
           <div className="info">
             <div className="wrapper2">
-              <h1>{safari.name}</h1>
               <h2>3 days trip</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit magni officiis nemo possimus blanditiis.</p>
             </div>

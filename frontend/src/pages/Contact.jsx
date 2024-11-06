@@ -9,7 +9,6 @@ function Contact() {
     </Helmet>
     <div className="contact">
         <div className="container">
-            <h3>Talk to us</h3>
             <form action="submit">
                 <div><input type="text" placeholder='First name'/><input type="text" placeholder='Last name'/></div>
                 <input type="email" name="" id="" placeholder='Email'/>

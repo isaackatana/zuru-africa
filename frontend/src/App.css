@@ -25,6 +25,11 @@ header .header1 {
   padding: 7.5px 20px;
   background-color: #ff7e5f;
 }
+@media screen and (max-width: 480px) {
+  header .header1 {
+    padding: 10px;
+  }
+}
 header .header1 .social-links a {
   color: black;
 }
@@ -53,6 +58,11 @@ header .header2 {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+@media screen and (max-width: 480px) {
+  header .header2 {
+    padding: 0 10px;
+  }
 }
 header .header2 .logo {
   cursor: pointer;
@@ -126,7 +136,7 @@ header .header2 nav .user-login button {
   width: 100px;
   padding: 5px;
   background-color: #ff7e5f;
-  border-radius: 25px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   transition: 0.2s;
@@ -154,7 +164,7 @@ header .header2 nav .user-login .profile .profile-icon svg {
   font-size: 15px;
 }
 header .header2 .burger {
-  padding: 20px;
+  padding: 10px;
   display: none;
 }
 @media screen and (max-width: 480px) {
@@ -263,9 +273,6 @@ header .header2 .burger svg {
     padding: 7.5px 10px;
   }
 }
-.safaris h1 {
-  margin-bottom: 10px;
-}
 .safaris .container {
   display: flex;
   gap: 10px;
@@ -280,11 +287,16 @@ header .header2 .burger svg {
   flex-direction: column;
   place-items: center;
   justify-content: center;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .safaris .container .wrapper {
     width: 100%;
   }
+}
+.safaris .container .wrapper h1 {
+  position: absolute;
+  color: white;
 }
 .safaris .container .wrapper img {
   width: 100%;
@@ -339,6 +351,8 @@ header .header2 .burger svg {
   flex-direction: column;
   width: 400px;
   gap: 5px;
+  background-color: #ff7e5f;
+  padding: 10px;
 }
 @media screen and (max-width: 480px) {
   .contact .container form {
@@ -355,12 +369,12 @@ header .header2 .burger svg {
 .contact .container form input {
   padding: 10px;
   border-radius: 5px;
-  border: solid black 1px;
+  border: none;
 }
 .contact .container form textarea {
   padding: 10px;
   border-radius: 5px;
-  border: solid black 1px;
+  border: none;
 }
 .contact .container form .action {
   display: flex;
@@ -376,7 +390,7 @@ header .header2 .burger svg {
   width: 100px;
   cursor: pointer;
   background-color: #ff7e5f;
-  border: solid 1px;
+  border: none;
   border-radius: 5px;
   padding: 10px;
 }
