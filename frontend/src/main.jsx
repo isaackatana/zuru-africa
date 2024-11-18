@@ -9,6 +9,7 @@ import Safaris from './pages/Safaris.jsx';
 import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
+import SafariDetail from './pages/SafariDetail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/safaris",
         element: <Safaris/>
+      },
+
+      {
+        path: "/safaris/details",
+        element: <SafariDetail/>
       },
       {
         path: "/contact",

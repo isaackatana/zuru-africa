@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import SafariList from './SafariList';
+import { FaSearch } from 'react-icons/fa';
 
 const safaris = [
   {
@@ -25,7 +26,11 @@ function Safaris() {
     </Helmet>
 
     <div className="safaris">
-      <div className="container">
+      <div className="search-bar">
+        <input type="text" placeholder='Search Safari'/>
+        <div><FaSearch/></div>
+      </div>
+      <div className="container">  
         <SafariList safaris={safaris}/>
       </div>
     </div>

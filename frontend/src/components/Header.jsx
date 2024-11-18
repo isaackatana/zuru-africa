@@ -68,7 +68,7 @@ function Header() {
                   <span className="profile-icon"><FaUser/></span>
                 </div>
               ) : (
-                <button onClick={() => setAuthPopupOpen(true)}>Login / Register</button>
+                <button onClick={() => setAuthPopupOpen(true)}>Login</button>
               )}
               {isAuthPopupOpen && <AuthPopup onClose={() => setAuthPopupOpen(false)} onLoginSuccess={handleLoginSuccess} />}
             </div>

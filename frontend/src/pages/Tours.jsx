@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { FaSearch } from 'react-icons/fa'
 
 function Tours() {
   return (
@@ -7,7 +8,12 @@ function Tours() {
     <Helmet>
         <title>Juels | Tours</title>
     </Helmet>
-    <div>Tours</div>
+    <div className="tours">
+      <div className="search-bar">
+          <input type="text" placeholder='Search Tours'/>
+          <div><FaSearch/></div>
+        </div>      
+    </div>
     </>
   )
 }

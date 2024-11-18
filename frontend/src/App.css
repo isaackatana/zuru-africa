@@ -130,6 +130,7 @@ header .header2 nav ul .has-submenu:hover ul {
 }
 header .header2 nav .user-login {
   display: flex;
+  align-items: center;
   gap: 5px;
 }
 header .header2 nav .user-login button {
@@ -207,14 +208,16 @@ header .header2 .burger svg {
   top: 10px;
   right: 10px;
   background: transparent;
-  border: solid black 1px;
-  font-size: small;
-  cursor: pointer;
+  font-size: 30px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.overlay .popup .close-button:hover {
+  border-radius: 30px;
 }
 .overlay form {
   display: flex;
@@ -269,6 +272,33 @@ header .header2 .burger svg {
   opacity: 1;
 }
 
+.tours {
+  padding: 20px;
+}
+.tours .search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.tours .search-bar input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #feb47b;
+}
+.tours .search-bar div {
+  background-color: #ff7e5f;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+.tours .search-bar div svg {
+  color: white;
+  cursor: pointer;
+}
+
 .safaris {
   padding: 20px;
 }
@@ -276,6 +306,32 @@ header .header2 .burger svg {
   .safaris {
     padding: 7.5px 10px;
   }
+}
+.safaris .search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.safaris .search-bar input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #feb47b;
+}
+.safaris .search-bar div {
+  background-color: #ff7e5f;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.safaris .search-bar div:hover {
+  background-color: black;
+}
+.safaris .search-bar div svg {
+  cursor: pointer;
 }
 .safaris .container {
   display: flex;
@@ -286,57 +342,80 @@ header .header2 .burger svg {
     flex-direction: column;
   }
 }
-.safaris .container .wrapper {
+.safaris .container a {
+  text-decoration: none;
+  color: white;
+}
+.safaris .container a .wrapper {
   display: flex;
   flex-direction: column;
   place-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .safaris .container .wrapper {
+  .safaris .container a .wrapper {
     width: 100%;
   }
 }
-.safaris .container .wrapper h1 {
+.safaris .container a .wrapper h1 {
   position: absolute;
   color: white;
 }
-.safaris .container .wrapper img {
+.safaris .container a .wrapper img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.safaris .container .wrapper .info {
-  background-color: black;
+.safaris .container a .wrapper .info {
   bottom: 0;
   width: 100%;
-  background-color: #feb47b;
-}
-.safaris .container .wrapper .info .wrapper2 {
-  padding: 10px;
-}
-.safaris .container .wrapper .info .add-to-cart {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  cursor: pointer;
-}
-.safaris .container .wrapper .info .add-to-cart:hover {
-  background-color: #ff7e5f;
-  color: white;
-}
-.safaris .container .wrapper .info .add-to-cart svg {
-  font-size: 30px;
-  cursor: pointer;
-}
-.safaris .container .wrapper .info .add-to-cart svg:hover {
   color: black;
+}
+.safaris .container a .wrapper .info .wrapper2 {
+  padding: 10px;
+  background-color: #feb47b;
 }
 .safaris .container .active {
   opacity: 1;
+}
+
+.safari-detail {
+  padding: 20px;
+}
+.safari-detail .wrapper {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+}
+.safari-detail .wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.safari-detail .wrapper .info {
+  background-color: #feb47b;
+  padding: 10px;
+}
+.safari-detail .wrapper .info h3 {
+  margin-bottom: 10px;
+}
+.safari-detail .wrapper .info p {
+  margin-bottom: 10px;
+}
+.safari-detail .wrapper .info button {
+  width: 100px;
+  padding: 10px;
+  background-color: #ff7e5f;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.safari-detail .wrapper .info button:hover {
+  color: white;
+  background-color: black;
 }
 
 .contact .container {
@@ -355,7 +434,7 @@ header .header2 .burger svg {
   flex-direction: column;
   width: 400px;
   gap: 5px;
-  background-color: #ff7e5f;
+  background-color: #feb47b;
   padding: 10px;
 }
 @media screen and (max-width: 480px) {
@@ -494,6 +573,7 @@ footer .footer2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 footer .footer2 p {
   text-align: center;
