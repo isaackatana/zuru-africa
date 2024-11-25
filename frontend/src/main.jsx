@@ -30,7 +30,6 @@ const router = createBrowserRouter([
         path: "/safaris",
         element: <Safaris/>
       },
-
       {
         path: "/safaris/details",
         element: <SafariDetail/>
