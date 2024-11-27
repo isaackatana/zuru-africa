@@ -34,7 +34,7 @@ function Header() {
           <div><FaEnvelope/> info@zuruafricasafaris.com</div>
         </div>
       </div>
-      <div className="header2">                                    
+      <div className="header2">    
         <Link to='/'><div className="logo">ZATS</div></Link>
         <nav>
             <ul>
@@ -63,9 +63,17 @@ function Header() {
             </ul>
             <div className="user-login">
               {isLoggedIn ? (
-                <div className="profile">
+                
+                <div className="has-submenu profile">
                   <button onClick={handleLogout}>Logout</button>
-                  <span className="profile-icon"><FaUser/></span>
+                  <Link to=''><span className="profile-icon"><FaUser/></span></Link>
+
+                  <ul>
+                    <Link to=''>Zanzibar</Link>
+                    <Link to=''>Malindi</Link>
+                    <Link to=''>Kilifi</Link>
+                    <Link to=''>Diani</Link>
+                  </ul>
                 </div>
               ) : (
                 <button onClick={() => setAuthPopupOpen(true)}>Login</button>

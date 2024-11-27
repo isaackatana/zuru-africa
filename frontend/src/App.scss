@@ -247,7 +247,6 @@ header {
 
     .popup {
         background-color: #feb47b;
-        padding: 20px;
         width: 300px;
         border-radius: 8px;
         position: relative;
@@ -255,14 +254,13 @@ header {
 
         h2 {
             text-align: start;
-            margin-bottom: 10px;
+            padding: 20px 20px 0;
         }
 
         .close-button {
             position: absolute;
             top: 10px;
             right: 10px;
-            background: transparent;
             font-size: 30px;
             width: 30px;
             height: 30px;
@@ -270,6 +268,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 30px;
 
             &:hover {
                 border-radius: 30px;
@@ -281,6 +280,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding: 20px;
     
         input {
             padding: 10px;
@@ -302,11 +302,16 @@ header {
     }
     
     p {
-        margin-top: 1rem;
+        margin-top: 0.1rem;
         cursor: pointer;
+        padding: 1rem;
+        background-color: #ff7e5f;
+        border-radius: 0  0 8px 8px;
     
         &:hover {
-        text-decoration: underline;
+            text-decoration: underline;
+            background-color: black;
+            color: white;
         }
     }
 } 
@@ -341,7 +346,6 @@ header {
         opacity: 1;
     }
 }
-
 
 // Tours
 
@@ -411,6 +415,7 @@ header {
 
             svg {
                 cursor: pointer;
+                color: white;
             }
         }
     }
@@ -474,7 +479,7 @@ header {
     padding: 20px;
 
     .wrapper {
-        height: 600px;
+        height: 400px;
         display: grid;
         grid-template-columns: 50% 1fr;
 

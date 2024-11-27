@@ -34,7 +34,7 @@ function Footer() {
         </div>
       </div>
       <div className='footer2'>
-        <p>Copyright © 2024 Zuru Africa Safaris. All Rights Reserved. </p>
+        <p>Copyright © 2025 Zuru Africa Safaris. All Rights Reserved. </p>
         <div className="social-links">
           <a href="http://facebook.com/juelssafaris" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
           <a href="http://instagram.com/juelssafaris" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>

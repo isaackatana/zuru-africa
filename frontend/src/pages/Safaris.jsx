@@ -5,7 +5,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const safaris = [
   {
-    name: "Zanzibar"
+    name: "Mombasa"
   },
   {
     name: "Malindi"
@@ -34,7 +34,7 @@ function Safaris() {
         <SafariList safaris={safaris}/>
       </div>
     </div>
-      
+    
     </>
   )
 }

@@ -15,7 +15,7 @@ function SafariDetail() {
             <div className="info">
                 <h3>Name</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugiat pariatur ratione dolore nisi ut. Porro, mollitia. Numquam, mollitia et. Sint, culpa deserunt aut eveniet doloremque ipsum quibusdam autem maiores!</p>
-                <button>Book trip</button>
+                <button>Book Now</button>
             </div>
         </div>
     </div>
