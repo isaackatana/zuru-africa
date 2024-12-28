@@ -30,7 +30,7 @@ function Footer() {
           <h4>Contact</h4>
           <div><FaLocationPin/><span>Address:</span> Ukunda, Diani</div>
           <div><FaEnvelope/><span>Email:</span> info@zuruafricasafaris.com</div>
-          <div><FaPhone/><span>Phone:</span> +254 700 000 000</div>
+          <div><FaPhone/><span>Phone:</span>+254 100 434 316</div>
         </div>
       </div>
       <div className='footer2'>

@@ -312,19 +312,24 @@ header .header2 .burger svg {
     padding: 7.5px 10px;
   }
 }
-.safaris .search-bar {
+.safaris .filter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.safaris .filter-wrapper .search-bar {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   gap: 5px;
 }
-.safaris .search-bar input {
+.safaris .filter-wrapper .search-bar input {
   padding: 10px;
   border-radius: 5px;
   border: none;
   background-color: #feb47b;
 }
-.safaris .search-bar div {
+.safaris .filter-wrapper .search-bar div {
   background-color: #ff7e5f;
   display: flex;
   justify-content: center;
@@ -332,15 +337,16 @@ header .header2 .burger svg {
   border-radius: 5px;
   cursor: pointer;
 }
-.safaris .search-bar div:hover {
+.safaris .filter-wrapper .search-bar div:hover {
   background-color: black;
 }
-.safaris .search-bar div svg {
+.safaris .filter-wrapper .search-bar div svg {
   cursor: pointer;
   color: white;
 }
 .safaris .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
 @media screen and (max-width: 480px) {
@@ -348,39 +354,38 @@ header .header2 .burger svg {
     flex-direction: column;
   }
 }
-.safaris .container a {
-  text-decoration: none;
-  color: white;
-}
-.safaris .container a .wrapper {
+.safaris .container .wrapper {
   display: flex;
   flex-direction: column;
   place-items: center;
   justify-content: center;
   position: relative;
-  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .safaris .container a .wrapper {
+  .safaris .container .wrapper {
     width: 100%;
   }
 }
-.safaris .container a .wrapper h1 {
+.safaris .container .wrapper h1 {
   position: absolute;
   color: white;
 }
-.safaris .container a .wrapper img {
+.safaris .container .wrapper a {
+  width: 100%;
+}
+.safaris .container .wrapper a img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
-.safaris .container a .wrapper .info {
+.safaris .container .wrapper .info {
   bottom: 0;
   width: 100%;
   color: black;
 }
-.safaris .container a .wrapper .info .wrapper2 {
+.safaris .container .wrapper .info .wrapper2 {
   padding: 10px;
   background-color: #feb47b;
 }
@@ -390,11 +395,24 @@ header .header2 .burger svg {
 
 .safari-detail {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .safari-detail {
+    padding: 10px;
+  }
 }
 .safari-detail .wrapper {
-  height: 400px;
   display: grid;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+}
+@media screen and (max-width: 480px) {
+  .safari-detail .wrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
 }
 .safari-detail .wrapper img {
   width: 100%;
@@ -402,26 +420,68 @@ header .header2 .burger svg {
 }
 .safari-detail .wrapper .info {
   background-color: #feb47b;
-  padding: 10px;
+  padding: 20px;
 }
-.safari-detail .wrapper .info h3 {
+.safari-detail .wrapper .info h1 {
   margin-bottom: 10px;
 }
-.safari-detail .wrapper .info p {
-  margin-bottom: 10px;
+.safari-detail .wrapper .info h2 {
+  margin: 10px 0 10px;
 }
-.safari-detail .wrapper .info button {
-  width: 100px;
+.safari-detail .wrapper .info form {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 480px) {
+  .safari-detail .wrapper .info form {
+    flex-direction: column;
+  }
+}
+.safari-detail .wrapper .info form .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.safari-detail .wrapper .info form .user-info .names {
+  display: flex;
+  gap: 5px;
+}
+.safari-detail .wrapper .info form .user-info .names input {
+  width: 100%;
+}
+.safari-detail .wrapper .info form .user-info .booking-date {
+  display: flex;
+  gap: 5px;
+}
+.safari-detail .wrapper .info form .user-info .booking-date input {
+  width: 100%;
+}
+.safari-detail .wrapper .info form .user-info input {
   padding: 10px;
-  background-color: #ff7e5f;
-  border-radius: 25px;
-  border: none;
+}
+.safari-detail .wrapper .info form .book-now {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.safari-detail .wrapper .info form .book-now div {
+  display: flex;
+  justify-content: space-between;
+}
+.safari-detail .wrapper .info form .book-now .book-btn {
+  justify-content: end;
+}
+.safari-detail .wrapper .info form .book-now .book-btn button {
+  width: 100%;
+  padding: 10px;
   cursor: pointer;
-  transition: 0.2s;
+  background-color: #ff7e5f;
+  border: none;
 }
-.safari-detail .wrapper .info button:hover {
-  color: white;
+.safari-detail .wrapper .info form .book-now .book-btn button:hover {
   background-color: black;
+  color: white;
 }
 
 .contact .container {

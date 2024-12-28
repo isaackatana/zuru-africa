@@ -30,7 +30,7 @@ function Header() {
           <a href="http://x.com/juelssafaris" target="_blank" rel="noopener noreferrer"><FaXTwitter/></a>
         </div>
         <div className="contact-links">
-          <div><FaPhone/>+254  700 000000</div>
+          <div><FaPhone/>+254 100 434 316</div>
           <div><FaEnvelope/> info@zuruafricasafaris.com</div>
         </div>
       </div>
@@ -52,7 +52,7 @@ function Header() {
                   <NavLink to="/safaris">Safaris</NavLink>
 
                   <ul>
-                    <Link to=''>Zanzibar</Link>
+                    <Link to=''>Mombasa</Link>
                     <Link to=''>Malindi</Link>
                     <Link to=''>Kilifi</Link>
                     <Link to=''>Diani</Link>
@@ -63,16 +63,14 @@ function Header() {
             </ul>
             <div className="user-login">
               {isLoggedIn ? (
-                
-                <div className="has-submenu profile">
+                <div className="profile">
                   <button onClick={handleLogout}>Logout</button>
                   <Link to=''><span className="profile-icon"><FaUser/></span></Link>
 
                   <ul>
-                    <Link to=''>Zanzibar</Link>
-                    <Link to=''>Malindi</Link>
-                    <Link to=''>Kilifi</Link>
-                    <Link to=''>Diani</Link>
+                    <Link to=''>Profile</Link>
+                    <Link to=''>Settings</Link>
+                    <Link to=''>Payments</Link>
                   </ul>
                 </div>
               ) : (

@@ -37,7 +37,7 @@ const AuthPopup = ({ onClose, onLoginSuccess }) => {
         <h2>{isLogin ? 'Login' : 'Register'}</h2>
         <form onSubmit={handleSubmit}>
           {!isLogin && (
-            <input
+              <input
               type="text"
               name="username"
               placeholder="Username"
@@ -45,6 +45,7 @@ const AuthPopup = ({ onClose, onLoginSuccess }) => {
               onChange={handleInputChange}
               required
             />
+            
           )}
           <input
             type="email"

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
+import Blog from '../pages/Blog';
 
 const photos = [
   'https://idsb.tmgrup.com.tr/ly/uploads/images/2023/09/29/294329.jpg',
@@ -34,6 +35,7 @@ function Home() {
           ))}
         </div>
     </div>
+    <Blog/>
     </>
   )
 }

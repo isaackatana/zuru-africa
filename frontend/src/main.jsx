@@ -10,6 +10,7 @@ import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 import SafariDetail from './pages/SafariDetail.jsx';
+import FetchData from './pages/FetchData.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
         element: <Safaris/>
       },
       {
-        path: "/safaris/details",
+        path: "/safaris/:id",
         element: <SafariDetail/>
       },
       {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         element: <About/>
       },
       {
+        path: "/fetch-data",
+        element: <FetchData/>
+      },
+      {
         path: "*",
         element: <NotFoundPage/>
       }
@@ -51,7 +56,5 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
 )
