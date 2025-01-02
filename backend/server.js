@@ -4,7 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const authRoutes = require('./routes/auth');
-const pagesRoutes = require('./routes/pagesRoutes');
+const safariRoutes = require('./routes/safariRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -31,8 +31,8 @@ mongoose.connect('mongodb+srv://mrisaackatana:Iyez8cyhuBFFXCaf@zuruafricasafaris
   .catch((err) => console.error('Failed to connect to the database:', err));
 
 // Routes
-app.use('/', pagesRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/safaris', safariRoutes);
 
 // Start Server
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
