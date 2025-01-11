@@ -277,6 +277,9 @@ header .header2 .burger svg {
   opacity: 1;
 }
 
+.blog {
+  padding: 7.5px 20px;
+}
 .tours {
   padding: 20px;
 }

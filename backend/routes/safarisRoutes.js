@@ -4,7 +4,7 @@ const router = express.Router();
 const Safari = require('../models/Safari');
 
 // GET /api/safaris
-router.get('/safaris', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const safaris = await Safari.find();
     res.json(safaris);
